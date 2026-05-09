@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>woniu-vue-plus</artifactId>
+        <groupId>org.dromara</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>woniu-common-bom</module>
+        <module>woniu-common-social</module>
+        <module>woniu-common-core</module>
+        <module>woniu-common-doc</module>
+        <module>woniu-common-excel</module>
+        <module>woniu-common-idempotent</module>
+        <module>woniu-common-job</module>
+        <module>woniu-common-log</module>
+        <module>woniu-common-mail</module>
+        <module>woniu-common-mybatis</module>
+        <module>woniu-common-oss</module>
+        <module>woniu-common-ratelimiter</module>
+        <module>woniu-common-redis</module>
+        <module>woniu-common-satoken</module>
+        <module>woniu-common-security</module>
+        <module>woniu-common-sms</module>
+        <module>woniu-common-web</module>
+        <module>woniu-common-translation</module>
+        <module>woniu-common-sensitive</module>
+        <module>woniu-common-json</module>
+        <module>woniu-common-encrypt</module>
+        <module>woniu-common-tenant</module>
+        <module>woniu-common-websocket</module>
+        <module>woniu-common-sse</module>
+    </modules>
+
+    <artifactId>woniu-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        common 通用模块
+    </description>
+
+</project>

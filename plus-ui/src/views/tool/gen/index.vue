@@ -113,8 +113,8 @@
 </template>
 
 <script setup name="Gen" lang="ts">
-import { delTable, genCode, getDataNames, listTable, previewTable, synchDb } from '@/api/tool/gen';
-import { TableQuery, TableVO } from '@/api/tool/gen/types';
+import {delTable, genCode, getDataNames, listTable, previewTable, synchDb} from '@/api/tool/gen';
+import {TableQuery, TableVO} from '@/api/tool/gen/types';
 import router from '@/router';
 import ImportTable from './importTable.vue';
 
@@ -185,7 +185,7 @@ const handleGenTable = async (row?: TableVO) => {
     await genCode(row.tableId);
     proxy?.$modal.msgSuccess('成功生成到自定义路径：' + row.genPath);
   } else {
-    proxy?.$download.zip('/tool/gen/batchGenCode?tableIdStr=' + tbIds, 'ruoyi.zip');
+    proxy?.$download.zip('/tool/gen/batchGenCode?tableIdStr=' + tbIds, 'woniu.zip');
   }
 };
 /** 同步数据库操作 */

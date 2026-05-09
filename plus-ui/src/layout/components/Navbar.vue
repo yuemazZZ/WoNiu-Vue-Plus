@@ -48,11 +48,11 @@
           </div>
         </el-tooltip>
         <el-tooltip content="Github" effect="dark" placement="bottom">
-          <ruo-yi-git id="ruoyi-git" class="right-menu-item hover-effect" />
+          <ruo-yi-git id="woniu-git" class="right-menu-item hover-effect" />
         </el-tooltip>
 
         <el-tooltip :content="proxy.$t('navbar.document')" effect="dark" placement="bottom">
-          <ruo-yi-doc id="ruoyi-doc" class="right-menu-item hover-effect" />
+          <ruo-yi-doc id="woniu-doc" class="right-menu-item hover-effect" />
         </el-tooltip>
 
         <el-tooltip :content="proxy.$t('navbar.full')" effect="dark" placement="bottom">
@@ -94,17 +94,17 @@
 
 <script setup lang="ts">
 import SearchMenu from './TopBar/search.vue';
-import { useAppStore } from '@/store/modules/app';
-import { useUserStore } from '@/store/modules/user';
-import { useSettingsStore } from '@/store/modules/settings';
-import { useNoticeStore } from '@/store/modules/notice';
-import { getTenantList } from '@/api/login';
-import { dynamicClear, dynamicTenant } from '@/api/system/tenant';
-import { TenantVO } from '@/api/types';
+import {useAppStore} from '@/store/modules/app';
+import {useUserStore} from '@/store/modules/user';
+import {useSettingsStore} from '@/store/modules/settings';
+import {useNoticeStore} from '@/store/modules/notice';
+import {getTenantList} from '@/api/login';
+import {dynamicClear, dynamicTenant} from '@/api/system/tenant';
+import {TenantVO} from '@/api/types';
 import notice from './notice/index.vue';
 import router from '@/router';
-import { ElMessageBoxOptions } from 'element-plus/es/components/message-box/src/message-box.type';
-import { NavTypeEnum } from '@/enums/NavTypeEnum';
+import {ElMessageBoxOptions} from 'element-plus/es/components/message-box/src/message-box.type';
+import {NavTypeEnum} from '@/enums/NavTypeEnum';
 import Logo from "@/layout/components/Sidebar/Logo.vue";
 import TopBar from './TopBar'
 

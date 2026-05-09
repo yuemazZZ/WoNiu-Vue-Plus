@@ -1,15 +1,15 @@
-import axios, { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
-import { useUserStore } from '@/store/modules/user';
-import { getToken } from '@/utils/auth';
-import { tansParams, blobValidate } from '@/utils/ruoyi';
+import axios, {AxiosResponse, InternalAxiosRequestConfig} from 'axios';
+import {useUserStore} from '@/store/modules/user';
+import {getToken} from '@/utils/auth';
+import {blobValidate, tansParams} from '@/utils/woniu';
 import cache from '@/plugins/cache';
-import { HttpStatus } from '@/enums/RespEnum';
-import { errorCode } from '@/utils/errorCode';
-import { LoadingInstance } from 'element-plus/es/components/loading/src/loading';
+import {HttpStatus} from '@/enums/RespEnum';
+import {errorCode} from '@/utils/errorCode';
+import {LoadingInstance} from 'element-plus/es/components/loading/src/loading';
 import FileSaver from 'file-saver';
-import { getLanguage } from '@/lang';
-import { encryptBase64, encryptWithAes, generateAesKey, decryptWithAes, decryptBase64 } from '@/utils/crypto';
-import { encrypt, decrypt } from '@/utils/jsencrypt';
+import {getLanguage} from '@/lang';
+import {decryptBase64, decryptWithAes, encryptBase64, encryptWithAes, generateAesKey} from '@/utils/crypto';
+import {decrypt, encrypt} from '@/utils/jsencrypt';
 import router from '@/router';
 
 const encryptHeader = 'encrypt-key';

@@ -6,12 +6,12 @@ import auth from './auth';
 // 预设动画
 import animate from '@/animate';
 
-import { download as dl } from '@/utils/request';
-import { useDict } from '@/utils/dict';
-import { getConfigKey, updateConfigByKey } from '@/api/system/config';
-import { parseTime, addDateRange, handleTree, selectDictLabel, selectDictLabels } from '@/utils/ruoyi';
+import {download as dl} from '@/utils/request';
+import {useDict} from '@/utils/dict';
+import {getConfigKey, updateConfigByKey} from '@/api/system/config';
+import {addDateRange, handleTree, parseTime, selectDictLabel, selectDictLabels} from '@/utils/woniu';
 
-import { App } from 'vue';
+import {App} from 'vue';
 
 export default function installPlugin(app: App) {
   // 页签操作

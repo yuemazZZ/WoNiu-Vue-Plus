@@ -1,8 +1,8 @@
 /**
  * v-copyText 复制文本内容
- * Copyright (c) 2022 ruoyi
+ * Copyright (c) 2022 woniu
  */
-import { DirectiveBinding } from 'vue';
+import {DirectiveBinding} from 'vue';
 
 export default {
   beforeMount(el: any, { value, arg }: DirectiveBinding) {

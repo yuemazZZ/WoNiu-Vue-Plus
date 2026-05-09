@@ -56,11 +56,10 @@
 </template>
 
 <script setup name="AuthRole" lang="ts">
-import { RoleVO } from '@/api/system/role/types';
-import { getAuthRole, updateAuthRole } from '@/api/system/user';
-import { UserForm } from '@/api/system/user/types';
-import { RouteLocationNormalized } from 'vue-router';
-import { parseTime } from '@/utils/ruoyi';
+import {RoleVO} from '@/api/system/role/types';
+import {getAuthRole, updateAuthRole} from '@/api/system/user';
+import {UserForm} from '@/api/system/user/types';
+import {RouteLocationNormalized} from 'vue-router';
 
 const route = useRoute();
 const { proxy } = getCurrentInstance() as ComponentInternalInstance;
